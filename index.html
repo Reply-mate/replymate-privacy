@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reply Mate — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .meta { color: #666; margin-bottom: 2rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <h1>Reply Mate Privacy Policy</h1>
+  <p class="meta">Last updated: 23 September 2026 (AEST)<br />Contact: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a></p>
+
+  <h2>Who we are</h2>
+  <p>Reply Mate (“we”) provides a companion mobile app that helps adults draft replies for dating chats on apps like Bumble, Hinge, and Tinder. You paste a message into Reply Mate, get a suggestion, and <strong>you</strong> copy and send it yourself. We do not operate a dating network and we do not send messages into those apps for you.</p>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Messages you paste or type</strong> in the app (user-generated content), sent to our server so we can generate a reply suggestion.</li>
+    <li><strong>Conversation ID</strong> — a random UUID stored on your device and sent with requests so suggestions can stay coherent in a thread.</li>
+    <li><strong>Bearer token</strong> — stored only on your device (encrypted preferences) to authenticate to our API. Not a Google login in v0.</li>
+    <li><strong>Technical basics</strong> our host may see (IP, timestamps) as part of normal HTTPS hosting.</li>
+  </ul>
+  <p>We do not collect contacts, photos, precise location, or SMS in v0.</p>
+
+  <h2>How we use data</h2>
+  <ul>
+    <li>App functionality: generate one suggested reply per submission.</li>
+    <li>Safety: hard stops for crisis/self-harm cues and anything involving minors (no dating suggestion; safety handoff).</li>
+    <li>We do not sell your data or use it for third-party advertising in v0.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <ul>
+    <li><strong>Our server</strong> (currently hosted on Render) processes requests.</li>
+    <li><strong>OpenAI</strong> (or another LLM provider we configure) may receive prompt text derived from your pasted messages to generate the suggestion. They act as a service provider for that purpose.</li>
+    <li>We do not share data to post into Bumble, Hinge, or Tinder.</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <p>On device: conversation ID and token until you clear app data or reset in Settings. On server: short-lived conversation memory for active threads; we do not run a long-term marketing profile on your chats in v0. Hosting/provider logs follow their retention.</p>
+
+  <h2>Security</h2>
+  <p>HTTPS in transit. Token in EncryptedSharedPreferences on Android. No method is perfect — protect your device and do not share your Bearer token.</p>
+
+  <h2>Children</h2>
+  <p>Reply Mate is for <strong>adults 18+</strong> only. We do not knowingly provide dating-reply help involving minors.</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on where you live (including Australia), you may ask what we hold, ask for deletion of server-side thread data we can locate, or withdraw use by stopping use and clearing the app. Email the contact above.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy; the “Last updated” date will change. Material Play-related changes will be reflected before or with the relevant app update.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a>.</p>
+</body>
+</html>
