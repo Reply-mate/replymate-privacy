@@ -16,50 +16,70 @@
 </head>
 <body>
   <h1>Reply Mate Privacy Policy</h1>
-  <p class="meta">Last updated: 23 September 2026 (AEST)<br />Contact: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a></p>
+  <p class="meta">Last updated: 25 September 2026 (AEST)<br />Contact: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a></p>
 
   <h2>Who we are</h2>
-  <p>Reply Mate (“we”) provides a companion mobile app that helps adults draft replies for dating chats on apps like Bumble, Hinge, and Tinder. You paste a message into Reply Mate, get a suggestion, and <strong>you</strong> copy and send it yourself. We do not operate a dating network and we do not send messages into those apps for you.</p>
+  <p>Reply Mate is published on Google Play by Jabba AU, operated by Jayden Cheers (sole trader), ABN 18 694 598 498. In this policy, “we”, “us” and “our” mean that operator.</p>
+  <p>Reply Mate helps adults draft replies for dating chats on apps like Bumble, Hinge, and Tinder. You paste a message from your match into Reply Mate, our server suggests one reply, and <strong>you</strong> copy and send it yourself. We do not operate a dating network, we do not connect to your dating apps, and we do not send messages for you.</p>
+  <p>Reply Mate has no accounts and no sign-in. We do not ask for your name, email address, phone number, or dating profile.</p>
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Messages you paste or type</strong> in the app (user-generated content), sent to our server so we can generate a reply suggestion.</li>
-    <li><strong>Conversation ID</strong> — a random UUID stored on your device and sent with requests so suggestions can stay coherent in a thread.</li>
-    <li><strong>Bearer token</strong> — stored only on your device (encrypted preferences) to authenticate to our API. Not a Google login in v0.</li>
-    <li><strong>Technical basics</strong> our host may see (IP, timestamps) as part of normal HTTPS hosting.</li>
+    <li><strong>Messages you paste or type</strong> into the app. They are sent to our server to generate a suggestion, together with the suggestions our server sends back.</li>
+    <li><strong>Conversation ID</strong> — a random identifier the app creates on your device and sends with each message so suggestions can follow the thread. It is not linked to your name or any account. You can see it, and reset it, in the app’s Settings.</li>
+    <li><strong>App access token</strong> — a token the app sends to show that requests come from Reply Mate. It is the same for every copy of the app, is not linked to you, and is stored encrypted on your device.</li>
+    <li><strong>Technical information</strong> — when your phone connects to our server, our hosting provider necessarily processes your IP address and basic request details (such as the time and the address requested) to deliver the traffic. Our server code does not record your IP address.</li>
   </ul>
-  <p>We do not collect contacts, photos, precise location, or SMS in v0.</p>
+  <p>We do not collect contacts, photos, location, SMS, or call logs. The app asks only for internet access. It contains no analytics, crash-reporting, or advertising tools.</p>
 
   <h2>How we use data</h2>
   <ul>
-    <li>App functionality: generate one suggested reply per submission.</li>
-    <li>Safety: hard stops for crisis/self-harm cues and anything involving minors (no dating suggestion; safety handoff).</li>
-    <li>We do not sell your data or use it for third-party advertising in v0.</li>
+    <li><strong>To suggest a reply</strong> (app functionality). Recent messages from the same conversation are included so the suggestion fits the thread.</li>
+    <li><strong>Safety.</strong> Our server checks each message for signs of crisis or self-harm, anything involving minors, and requests for passwords, bank or card details, codes, money, or investments. When a check is triggered, the app shows a safety message instead of a suggestion. That message is not sent to OpenAI and is not kept in conversation memory.</li>
+    <li>We do not sell your data, use it for advertising, or build profiles about you.</li>
   </ul>
 
-  <h2>Sharing</h2>
+  <h2>Who we share it with</h2>
+  <p>We use two service providers, which process data on our behalf:</p>
   <ul>
-    <li><strong>Our server</strong> (currently hosted on Render) processes requests.</li>
-    <li><strong>OpenAI</strong> (or another LLM provider we configure) may receive prompt text derived from your pasted messages to generate the suggestion. They act as a service provider for that purpose.</li>
-    <li>We do not share data to post into Bumble, Hinge, or Tinder.</li>
+    <li><strong>Render</strong> hosts our server in Oregon, United States.</li>
+    <li><strong>OpenAI</strong> generates the suggestions. For each message, our server sends OpenAI’s API our instructions plus the recent messages in your conversation (up to the last 20 messages, counting both your pasted messages and earlier suggestions). OpenAI states that data sent to its API is not used to train or improve its models unless the customer explicitly opts in. OpenAI keeps abuse monitoring logs, which may contain prompts and responses, for up to 30 days, unless longer retention is required by law or is reasonably necessary to protect its services or others from harm. We use OpenAI’s Chat Completions API without its optional storage feature, and OpenAI’s documentation lists no other storage of conversation content for this API beyond short-term technical caching. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI’s data controls</a>.</li>
+  </ul>
+  <p>This means your data is processed outside Australia, including in the United States. We do not share data with Bumble, Hinge, Tinder, or any other dating app. We may disclose information if the law requires it.</p>
+
+  <h2>How long we keep data</h2>
+  <ul>
+    <li><strong>On our server:</strong> there is no fixed expiry date. Conversation text is held only in the server’s memory and is never written to a database or disk. It is limited to the most recent 20 messages for each conversation ID. It is erased whenever the server restarts or is redeployed, and when our hosting plan puts the server to sleep after 15 minutes with no traffic from anyone. While the app is in regular use the server may not sleep or restart for some time, so conversation text can stay in memory for hours or longer. Messages that trigger a safety message are not kept.</li>
+    <li><strong>Server logs:</strong> our server’s logs contain only operational messages (for example, that the server has started). They do not contain your messages, conversation IDs, or IP addresses. Render, our hosting provider, keeps service logs for a limited period (between 7 and 30 days, depending on the hosting plan).</li>
+    <li><strong>OpenAI:</strong> up to 30 days for abuse monitoring, as described above.</li>
+    <li><strong>On your device:</strong> the conversation ID stays until you reset it in Settings, clear the app’s data, or uninstall the app. The app access token stays until you clear it in Settings, clear the app’s data, or uninstall the app. The chat shown on screen is not saved to your device’s storage; it lasts only while the app is open.</li>
+    <li><strong>Emails and reports</strong> you send us are kept only as long as we need them to respond and to deal with the issue.</li>
   </ul>
 
-  <h2>Retention</h2>
-  <p>On device: conversation ID and token until you clear app data or reset in Settings. On server: short-lived conversation memory for active threads; we do not run a long-term marketing profile on your chats in v0. Hosting/provider logs follow their retention.</p>
+  <h2>Deleting your data</h2>
+  <ul>
+    <li>Reply Mate has no accounts, so there is no account to delete.</li>
+    <li><strong>Reset in the app:</strong> in Settings, tap <em>Reset conversation ID</em>. The app creates a new ID, so future messages are not linked to your earlier conversation. Messages already held in server memory under the old ID are not removed straight away; they are erased the next time the server restarts, is redeployed, or goes to sleep.</li>
+    <li><strong>Uninstall or clear app data:</strong> this removes everything Reply Mate stores on your device, including the conversation ID and the app access token.</li>
+    <li><strong>Ask us:</strong> email <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a> and include the conversation ID shown in Settings (note it down before you reset it). We will erase any conversation memory we hold for that ID and reply within 30 days. Because there are no accounts, we cannot find your conversation without the conversation ID; either way, server memory is short-lived. We cannot delete OpenAI’s abuse monitoring logs, which OpenAI keeps for up to 30 days.</li>
+  </ul>
+
+  <h2>Reporting a suggestion</h2>
+  <p>If a suggestion is offensive, harmful, or inaccurate, please tell us by emailing <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a>, or by using the Report option in the app where available. A report includes the suggestion text, the message it responded to if you choose to include it, and a reason. If you report by email, we also receive your email address. We use reports only to review the suggestion and to improve Reply Mate’s safety and quality.</p>
 
   <h2>Security</h2>
-  <p>HTTPS in transit. Token in EncryptedSharedPreferences on Android. No method is perfect — protect your device and do not share your Bearer token.</p>
+  <p>All traffic between the app and our server uses HTTPS; the app blocks unencrypted (HTTP) connections. The app access token is stored using Android’s encrypted preferences. No method is perfect, so please protect your device.</p>
 
-  <h2>Children</h2>
-  <p>Reply Mate is for <strong>adults 18+</strong> only. We do not knowingly provide dating-reply help involving minors.</p>
+  <h2>Adults only (18+)</h2>
+  <p>Reply Mate is for <strong>adults aged 18 and over</strong> only. Do not use it if you are under 18. We do not knowingly collect information from anyone under 18, and our server shows a safety message instead of a suggestion if a message indicates that a minor is involved.</p>
 
   <h2>Your rights</h2>
-  <p>Depending on where you live (including Australia), you may ask what we hold, ask for deletion of server-side thread data we can locate, or withdraw use by stopping use and clearing the app. Email the contact above.</p>
+  <p>Depending on where you live (including under Australian privacy law), you can ask what information we hold about you, ask us to correct it, or ask us to delete it. Email the contact below. If you are not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au">oaic.gov.au</a>).</p>
 
   <h2>Changes</h2>
-  <p>We may update this policy; the “Last updated” date will change. Material Play-related changes will be reflected before or with the relevant app update.</p>
+  <p>We may update this policy; the “Last updated” date will change. Material changes will be reflected here before or with the relevant app update.</p>
 
   <h2>Contact</h2>
-  <p>Privacy questions: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a>.</p>
+  <p>Privacy questions, deletion requests, and reports: <a href="mailto:info@savysaver.com.au">info@savysaver.com.au</a>.</p>
 </body>
 </html>
