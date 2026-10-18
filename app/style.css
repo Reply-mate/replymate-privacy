@@ -36,3 +36,9 @@ h2{font-size:22px;margin:0 0 10px}
 .foot p{margin:0 0 6px}
 .fine{font-size:13px;margin-top:12px!important}
 @media (min-width:860px){.hero .wrap{max-width:760px}body{font-size:18px}}
+.hero.slim{padding:20px 0 30px}
+.back{margin:0 0 14px;font-size:15px}
+.back a{color:#fff;font-weight:600;text-decoration:none}
+.back a:hover,.back a:focus{text-decoration:underline}
+.hero.slim h1{margin:20px 0 10px}
+.updated{margin:0;font-size:14px;opacity:.9}
